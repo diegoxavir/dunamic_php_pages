@@ -32,3 +32,9 @@ img {
     width: 100%;
 }
 
+.details-h1 {
+    font-size: 60px;
+}
+.details-h2 {
+    font-size: 40px;
+}
