@@ -17,9 +17,9 @@ $row = mysqli_fetch_assoc($result)
 <div class="details grid-con">
     <img class="image-big l-col-start-1 l-col-span-5" src="images/<?php echo $row['image']; ?>"
     alt="employee headshot">
-    <div class="details-text l-col-start-8 l-col-end-11">
-        <h1> <?php echo $row['fname'] .' '. $row['lname']; ?></h1>
-        <h2> <?php echo $row['title']; ?></h2>
+    <div class="details-text l-col-start-8 l-col-end-13">
+        <h1 class="details-h1"> <?php echo $row['fname'] .' '. $row['lname']; ?></h1>
+        <h2 class="details-h2"> <?php echo $row['title']; ?></h2>
 
     </div>
 </div>
