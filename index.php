@@ -7,6 +7,9 @@ $results = mysqli_query($connect, $query);
 
 <head>
 <link href="css/main.css" rel="stylesheet"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet">
 </head>
 <body>
 <header></header>
@@ -15,18 +18,19 @@ $results = mysqli_query($connect, $query);
 <div class="employees">
 <?php
 while($row = mysqli_fetch_array($results)) {
-echo '<section>
+echo '<section class="employee-shortcut">
+<img class="thumbtack" src="images/thumbtack.png" alt="a thumbtack">
     <a href="details.php?id=';
     echo $row['employee'];
     echo '"><img class="thumb" src="images/';
     echo $row['thumb'];
     echo '" alt="employee headshot"></a>
-    <h2>';
+    <div class="index-name"> <h2>';
     echo $row['fname']. ' ' . $row['lname'];
     echo '</h2>
     <h3>';
     echo $row['title'];
-    echo '</h3>
+    echo '</h3> </div>
 </section>';
 }
 ?>
