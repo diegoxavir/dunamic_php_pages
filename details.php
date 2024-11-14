@@ -21,7 +21,9 @@ $row = mysqli_fetch_assoc($result)
 <img class="thumbtack-details" src="images/thumbtack.png" alt="a thumbtack">
     <img class="image-big l-col-start-2 l-col-span-5" src="images/<?php echo $row['image']; ?>"
     alt="employee headshot">
+
     <div class="details-text l-col-start-7 l-col-end-13">
+    <img class="thumbtack-3" src="images/thumbtack.png" alt="a thumbtack">
         <h1 class="details-h1"> <?php echo $row['fname'] .' '. $row['lname']; ?></h1>
         <h2 class="details-h2"> <?php echo $row['title']; ?></h2>
 
