@@ -77,7 +77,7 @@ h1 {
     border: 20px solid rgb(66, 38, 22);
 }
 
-.thumbtack-details {
+.thumbtack-details, .thumbtack-3 {
     position: relative;
     height: 120px;
     left: 290px;
@@ -91,3 +91,7 @@ h1 {
     background-size: cover;
 }
 
+.thumbtack-3 {
+    left: 250px;
+    top: -70px;
+}
